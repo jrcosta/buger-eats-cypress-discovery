@@ -9,15 +9,25 @@ describe('Signup', function () {
             })
         }) */
 
-    it('User should be deliver.', function () {
+    context('User should be deliver.', function () {
 
         let deliver = signupFactory.deliver()
 
-        signup.go()
-        signup.fillForm(deliver)
-        signup.submit()
-        const expectedMessage = 'Recebemos os seus dados. Fique de olho na sua caixa de email, pois e em breve retornamos o contato.'
-        signup.modalContentShouldBe(expectedMessage)
+        const deliveryMethods = ['Moto', 'Bike Elétrica', 'Van/Carro']
+
+        afterEach(function () {
+            signup.go()
+            signup.fillForm(deliver)
+            signup.submit()
+            const expectedMessage = 'Recebemos os seus dados. Fique de olho na sua caixa de email, pois e em breve retornamos o contato.'
+            signup.modalContentShouldBe(expectedMessage)
+        })
+
+        deliveryMethods.forEach(function (method) {
+            it(`${method} validation.`, function () {
+                deliver.delivery_method = method
+            })
+        })
 
     })
 

@@ -21,8 +21,13 @@ class SignupPage {
         cy.get('input[name="district"]').should('have.value', deliver.address.district)
         cy.get('input[name="city-uf"]').should('have.value', deliver.address.city_state)
         
-        cy.contains('.delivery-method li', deliver.delivery_method).click()
-        cy.get('input[accept^="image"]').attachFile('/images/'+ deliver.cnh)
+        if(deliver.method === 'Bike Elétrica'){
+            this.skip()
+        } else {
+            cy.contains('.delivery-method li', deliver.delivery_method).click()
+            cy.get('input[accept^="image"]').attachFile('/images/'+ deliver.cnh)
+        }
+        
     }
 
     submit(){
