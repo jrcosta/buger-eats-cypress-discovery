@@ -1,0 +1,50 @@
+{
+    "signup": {
+        "name": "Eneri Junior",
+        "cpf": "47903376004",
+        "email": "email@email.com",
+        "whatsapp": "4899999999",
+        "address": {
+            "postalcode": "88106517",
+            "street": "Rua José Wilson Francisco",
+            "number": "1000",
+            "details": "Apt 999",
+            "district": "Forquilhinha",
+            "city_state": "São José/SC"
+        },
+        "delivery_method": "Moto",
+        "cnh": "cnh-digital.jpg"
+    },
+    "cpf_inv": {
+        "name": "José Junior",
+        "cpf": "479033760AA",
+        "email": "emaildojose@email.com.br",
+        "whatsapp": "4899999999",
+        "address": {
+            "postalcode": "88106517",
+            "street": "Rua José Wilson Francisco",
+            "number": "1000",
+            "details": "Apt 999",
+            "district": "Forquilhinha",
+            "city_state": "São José/SC"
+        },
+        "delivery_method": "Moto",
+        "cnh": "cnh-digital.jpg"
+    },
+        "email_inv": {
+            "name": "João Junior",
+            "cpf": "47903376004",
+            "email": "email.com.br",
+            "whatsapp": "4899999999",
+            "address": {
+                "postalcode": "88106517",
+                "street": "Rua José Wilson Francisco",
+                "number": "1000",
+                "details": "Apt 999",
+                "district": "Forquilhinha",
+                "city_state": "São José/SC"
+            },
+            "delivery_method": "Moto",
+            "cnh": "cnh-digital.jpg"
+        }
+}
